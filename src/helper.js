@@ -1,17 +1,7 @@
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  document.getElementById("domainGenerator").innerHTML = domainNameGenerator();
-};
-
 let domainNameGenerator = () => {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
+  let pronoun = ["the", "our", "your"];
+  let adj = ["great", "big", "worst"];
+  let noun = ["jogger", "racoon", "game"];
   let extensions = [".com", ".pt", ".us"];
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
@@ -23,3 +13,5 @@ let domainNameGenerator = () => {
     }
   }
 };
+
+console.log(domainNameGenerator());
